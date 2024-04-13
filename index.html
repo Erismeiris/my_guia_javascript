@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript moderno</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div style="
+        background-image: 
+        linear-gradient(rgba(250, 250, 250, 0.5), rgba(146, 163, 175, 0.5));
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: fit-content;
+        font-size: large;
+    ">
+    <h1>Mis notas de curso de javascript</h1>
+    <h2>01-FUNDAMENTOS</h2>
+    <h3>Vicular el archivo javascript al archivo .html</h3>
+    <p>Para vincular un archivo javascript a un archivo html se debe hacer uso de la etiqueta script, la cual se puede colocar en el head o en el body del archivo html. A continuación se muestra un ejemplo de cómo vincular un archivo javascript al archivo html.</p>
+    <pre>
+        <code>
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Título de la página&lt;/title&gt;
+                    &lt;script src="ruta-del-archivo.js"&gt;&lt;/script&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Hola mundo&lt;/h1&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <h3>Comentarios en javascript</h3>
+    <p>Para realizar comentarios en javascript se debe hacer uso de la doble diagonal // o de la diagonal seguida de un asterisco /* y cerrar con un asterisco seguido de una diagonal */. A continuación se muestra un ejemplo de cómo realizar comentarios en javascript.</p>
+    <pre>
+        <code>
+            // Este es un comentario de una sola línea
+            /* Este es un comentario
+            de varias líneas */
+        </code>
+    </pre>
+    <h3>Variables en javascript</h3>
+    <p>Para declarar una variable en javascript se debe hacer uso de la palabra reservada var seguida del nombre de la variable y el valor que se le asignará. A continuación se muestra un ejemplo de cómo declarar una variable en javascript.</p>
+    <pre>
+        <code>
+            var nombre = "Juan";
+            var edad = 25;
+            var sueldo = 1000.50;
+            var casado = false;
+        </code>
+    </pre>
+    <h3>Tipos de datos en javascript</h3>
+    <p>En javascript existen varios tipos de datos, entre los cuales se encuentran los primitivos y los compuestos. A continuación se muestra una lista de los tipos de datos primitivos en javascript.</p>
+    <ul>
+        <li>String: Cadena de texto</li>
+        <li>Number: Número</li>
+        <li>Boolean: Valor booleano</li>
+        <li>Null: Valor nulo</li>
+        <li>Undefined: Valor indefinido</li>
+    </ul>
+    <h3>Operadores en javascript</h3>
+    <p>En javascript existen varios operadores, entre los cuales se encuentran los aritméticos, de asignación, de comparación, lógicos, entre otros. A continuación se muestra una lista de los operadores en javascript.</p>
+    <ul>
+        <li>Aritméticos: +,  -,  *,  /,  %</li>
+        <li>Asignación: =, +=, -=, *=, /=, %=</li>
+        <li>Comparación: ==, ===, !=, !==, >, >=, <, <=</li>
+        <li>Lógicos: &&, ||, !</li>
+    </ul>
+    <h3>Condicionales en javascript</h3>
+    <p>En javascript existen varias estructuras condicionales, entre las cuales se encuentran el if, else if, else, switch, entre otros. A continuación se muestra un ejemplo de como realizar una estructura condicional if en javascript.</p>
+    <pre>
+        <code>
+            if (condicion) {
+                // Bloque de código si la condición es verdadera
+            } else {
+                // Bloque de código si la condición es falsa
+            }
+        </code>
+    </pre>
+    <h3>Ciclos en javascript</h3>
+    <p>En javascript existen varios ciclos, entre los cuales se encuentran el for, while, do while, entre otros. A continuación se muestra un ejemplo de como realizar un ciclo for en javascript.</p>
+    <pre>
+        <code>
+            for (var i = 0; i < 10; i++) {
+                // Bloque de código a repetir
+            }
+        </code>
+    </pre>
+    <h3>Funciones en javascript</h3>
+    <p>Para declarar una función en javascript se debe hacer uso de la palabra reservada function seguida del nombre de la función y los parámetros que recibe. A continuación se muestra un ejemplo de como declarar una función en javascript.</p>
+    <pre>
+        <code>
+            function sumar(a, b) {
+                return a + b;
+            }
+        </code>
+    </pre>
+    <h3>Arreglos en javascript</h3>
+    <p>Para declarar un arreglo en javascript se debe hacer uso de los corchetes [] y separar los elementos por comas. A continuación se muestra un ejemplo de como declarar un arreglo en javascript.</p>
+    <pre>
+        <code>
+            var numeros = [1, 2, 3, 4, 5];
+            var nombres = ["Juan", "Pedro", "Maria"];
+        </code>
+    </pre>
+    <h3>Objetos en javascript</h3>
+    <p>Para declarar un objeto en javascript se debe hacer uso de las llaves {} y separar las propiedades por comas. A continuación se muestra un ejemplo de como declarar un objeto en javascript.</p>
+    <pre>
+        <code>
+            var persona = {
+                nombre: "Juan",
+                edad: 25,
+                sueldo: 1000.50,
+                casado: false
+            };
+        </code>
+    </pre>
+    <h3>Clases en javascript</h3>
+    <p>Para declarar una clase en javascript se debe hacer uso de la palabra reservada class seguida del nombre de la clase y las propiedades y métodos que contiene. A continuación se muestra un ejemplo de como declarar una clase en javascript.</p>
+    <pre>
+        <code>
+            class Persona {
+                constructor(nombre, edad, sueldo, casado) {
+                    this.nombre = nombre;
+                    this.edad = edad;
+                    this.sueldo = sueldo;
+                    this.casado = casado;
+                }
+
+                saludar() {
+                    return "Hola, mi nombre es " + this.nombre;
+                }
+            }
+        </code>
+    </pre>
+    <h3>Instanciar una clase en javascript</h3>
+    <p>Para instanciar <i>(crear un objeto a partir de una clase existente)</i> una clase en javascript se debe hacer uso de la palabra reservada <strong><i>new</i></strong> seguida del nombre de la clase y los parámetros que recibe. A continuación se muestra un ejemplo de como instanciar una clase en javascript.</p>
+    <pre>
+        <code>
+            var persona = new Persona("Juan", 25, 1000.50, false);
+            console.log(persona.saludar());
+        </code>
+    </pre>
+    <h3>Eventos en javascript</h3>
+    <p>Para manejar eventos en javascript se debe hacer uso de la propiedad <strong><i>onclick</i></strong> seguida de la acción que se desea realizar. A continuación se muestra un ejemplo de como manejar un evento en javascript.</p>
+    <pre>
+        <code>
+            &lt;button onclick="alert('Hola mundo')"&gt;Mostrar alerta&lt;/button&gt;
+        </code>
+    </pre>
+    <h3>Alertas en javascript</h3>
+    <p>Para mostrar una alerta en javascript se debe hacer uso de la función <strong><i>alert</i></strong> seguida del mensaje que se desea mostrar. A continuación se muestra un ejemplo de como mostrar una alerta en javascript.</p>
+    <pre>
+        <code>
+            alert("Hola mundo");
+        </code>
+    </pre>
+    <h3>Consola en javascript</h3>
+    <p>Para mostrar un mensaje en la consola del navegador se debe hacer uso de la función <strong><i>console.log</i></strong> seguida del mensaje que se desea mostrar. A continuación se muestra un ejemplo de como mostrar un mensaje en la consola del navegador.</p>
+    <pre>
+        <code>
+            console.log("Hola mundo");
+        </code>
+    </pre>
+    <h3>Palabras reservadas</h3>
+    <p>En javascript existen varias palabras reservadas, las cuales no se pueden utilizar como nombres de variables, funciones, clases, entre otros. A continuación se muestra una lista de las palabras reservadas en javascript.</p>
+    <ul>
+        <li>break: <i> Usado para salir de un loop </i> 
+            Ejemplo:
+            <pre>
+                <code>
+                    for (var i = 0; i < 10; i++) {
+                        if (i == 5) {
+                            break;
+                        }
+                    }
+                </code>
+            </pre>
+        </li>
+        <li>case: <i> Etiqueta de un switch </i> 
+            Ejemplo:
+            <pre>
+                <code>
+                    switch (valor) {
+                        case 1:
+                            // Bloque de código
+                            break;
+                        case 2:
+                            // Bloque de código
+                            break;
+                        default:
+                            // Bloque de código
+                    }
+                </code>
+            </pre>
+        
+        </li>
+        <li>catch: <i> Captura una excepción </i> 
+            Ejemplo:
+            <pre>
+                <code>
+                    try {
+                        // Bloque de código
+                    } catch (error) {
+                        // Bloque de código
+                    }
+                </code>
+            </pre>
+        
+        </li>
+        <li>class: <i> Define una clase </i> 
+            Ejemplo:
+            <pre>
+                <code>
+                    class Persona {
+                        constructor(nombre, edad) {
+                            this.nombre = nombre;
+                            this.edad = edad;
+                        }
+                    }
+                </code>
+            </pre>
+        
+        </li>
+        <li>const: <i> Define una constante </i> 
+            Ejemplo:
+            <pre>
+                <code>
+                    const PI = 3.1416;
+                </code>
+            </pre>
+        
+        </li>
+        <li>continue: <i> Salta a la siguiente iteración de un loop </i> 
+            Ejemplo:
+            <pre>
+                <code>
+                    for (var i = 0; i < 10; i++) {
+                        if (i == 5) {
+                            continue;
+                        }
+                    }
+                </code>
+            </pre>
+        
+        </li>
+        <li>debugger: <i> Detiene la ejecución del script </i> 
+            Ejemplo:
+            <pre>
+                <code>
+                    debugger;
+                </code>
+            </pre>
+        </li>
+        <li>default: <i> Etiqueta de un switch </i>
+            Ejemplo:
+            <pre>
+                <code>
+                    switch (valor) {
+                        case 1:
+                            // Bloque de código
+                            break;
+                        case 2:
+                            // Bloque de código
+                            break;
+                        default:
+                            // Bloque de código
+                    }
+                </code>
+            </pre>
+        
+        </li>
+        <li>delete: <i> Elimina una propiedad de un objeto </i> 
+            Ejemplo:
+            <pre>
+                <code>
+                    delete objeto.propiedad;
+                </code>
+            </pre>
+        </li>
+        <li>do: <i> Inicia un loop do...while </i> 
+            Ejemplo:
+            <pre>
+                <code>
+                    do {
+                        // Bloque de código
+                    } while (condicion);
+                </code>
+            </pre>
+        </li>
+        <li>else: <i> Se ejecuta si la condición de un if es falsa </i> 
+            Ejemplo:
+            <pre>
+                <code>
+                    if (condicion) {
+                        // Bloque de código si la condición es verdadera
+                    } else {
+                        // Bloque de código si la condición es falsa
+                    }
+                </code>
+            </pre>
+        </li>
+        <li>export: <i> Exporta una función o variable </i> 
+            Ejemplo:
+            <pre>
+                <code>
+                    export function sumar(a, b) {
+                        return a + b;
+                    }
+                </code>
+            </pre>
+        </li>
+        <li>extends: <i> Extiende una clase </i> 
+            Ejemplo:
+            <pre>
+                <code>
+                    class Persona extends Animal {
+                        constructor(nombre, edad) {
+                            super(nombre, edad);
+                        }
+                    }
+                </code>
+            </pre>
+        </li>
+        <li>finally: <i> Se ejecuta después de un try o catch </i>
+            Ejemplo:
+            <pre>
+                <code>
+                    try {
+                        // Bloque de código
+                    } catch (error) {
+                        // Bloque de código
+                    } finally {
+                        // Bloque de código
+                    }
+                </code>
+            </pre> 
+        </li>
+        <li>for: <i> Inicia un loop for </i> 
+            Ejemplo:
+            <pre>
+                <code>
+                    for (var i = 0; i < 10; i++) {
+                        // Bloque de código
+                    }
+                </code>
+            </pre>
+        </li>
+        <li>function: <i> Define una función </i> 
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    function sumar(a, b) {
+                        return a + b;
+                    }
+                </code>
+            </pre>
+        
+        </li>
+        <li>if: <i> Inicia una estructura condicional </i>
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    if (condicion) {
+                        // Bloque de código si la condición es verdadera
+                    } else {
+                        // Bloque de código si la condición es falsa
+                    }
+                </code>
+            </pre>
+         </li>
+        <li>import: <i> Importa una función o variable </i>
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    import { sumar } from "./funciones.js";
+                </code>
+            </pre>
+         </li>
+        <li>in: <i> Verifica si una propiedad existe en un objeto </i> 
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    if ("nombre" in objeto) {
+                        // Bloque de código
+                    }
+                </code>
+            </pre>
+        </li>
+        <li>instanceof: <i> Verifica si un objeto es una instancia de una clase </i>
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    if (objeto instanceof Clase) {
+                        // Bloque de código
+                    }
+                </code>
+            </pre>
+         </li>
+        <li>new: <i> Crea una nueva instancia de una clase </i>
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    var objeto = new Clase();
+                </code>
+            </pre>
+         </li>
+        <li>return: <i> Retorna un valor de una función </i> 
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    function sumar(a, b) {
+                        return a + b;
+                    }
+                </code>
+            </pre>
+        </li>
+        <li>super: <i> Llama a un método de una clase padre </i> 
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    class Persona extends Animal {
+                        constructor(nombre, edad) {
+                            super(nombre, edad);
+                        }
+                    }
+                </code>
+            </pre>
+        </li>
+        <li>switch: <i> Inicia una estructura switch </i> 
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    switch (valor) {
+                        case 1:
+                            // Bloque de código
+                            break;
+                        case 2:
+                            // Bloque de código
+                            break;
+                        default:
+                            // Bloque de código
+                    }
+                </code>
+            </pre>
+        </li>
+        <li>this: <i> Hace referencia al objeto actual </i>
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    var persona = {
+                        nombre: "Juan",
+                        saludar: function() {
+                            return "Hola, mi nombre es " + this.nombre;
+                        }
+                    };
+                </code>
+            </pre>
+         </li>
+        <li>throw: <i> Lanza una excepción </i> 
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    throw new Error("Mensaje de error");
+                </code>
+            </pre>
+        
+        </li>
+        <li>try: <i> Inicia un bloque try...catch </i> 
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    try {
+                        // Bloque de código
+                    } catch (error) {
+                        // Bloque de código
+                    }
+                </code>
+            </pre>
+        </li>
+        <li>typeof: <i> Retorna el tipo de una variable </i> 
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    var nombre = "Juan";
+                    console.log(typeof nombre);
+                </code>
+            </pre>
+        </li>
+        <li>var: <i> Declara una variable </i> 
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    var nombre = "Juan";
+                </code>
+            </pre>
+        </li>
+        <li>void: <i> Retorna undefined </i> 
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    function saludar() {
+                        return "Hola mundo";
+                    }
+                    console.log(void saludar());
+                </code>
+            </pre>
+        </li>
+        <li>while: <i> Inicia un loop while </i> 
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    while (condicion) {
+                        // Bloque de código
+                    }
+                </code>
+            </pre>
+        </li>
+        <li>with: <i> Agrega un objeto a un scope </i>
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    with (objeto) {
+                        // Bloque de código
+                    }
+                </code>
+            </pre>
+         </li>
+        <li>yield: <i> Pausa una función generadora </i>
+            <br> Ejemplo:
+            <pre>
+                <code>
+                    function* generador() {
+                        yield 1;
+                        yield 2;
+                        yield 3;
+                    }
+                </code>
+            </pre>
+            
+         </li>
+    </ul>
+
+    <h3>Callback</h3>
+    <p>Un callback es una función que se pasa como argumento a otra función y se ejecuta después de que la función principal ha terminado de ejecutarse. A continuación se muestra un ejemplo de cómo utilizar un callback en javascript.</p>
+    <pre>
+        <code>
+            function sumar(a, b, callback) {
+                var resultado = a + b;
+                callback(resultado);
+            }
+
+            sumar(5, 3, function(resultado) {
+                console.log(resultado);
+            });
+        </code>
+    </pre>
+    <h3>Promise</h3>
+    <p>Una Promise es un objeto que representa la eventual finalización o falla de una operación asíncrona. A continuación se muestra un ejemplo de cómo utilizar una Promise en javascript.</p>
+    <pre>
+        <code>
+            function sumar(a, b) {
+                return new Promise(function(resolve, reject) {
+                    var resultado = a + b;
+                    if (resultado >= 0) {
+                        resolve(resultado);
+                    } else {
+                        reject("Error: El resultado es negativo");
+                    }
+                });
+            }
+
+            sumar(5, 3)
+                .then(function(resultado) {
+                    console.log(resultado);
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });
+        </code>
+    </pre>
+    <h3>Async/Await</h3>
+    <p>Async/Await es una forma de escribir código asíncrono de forma más clara y legible. A continuación se muestra un ejemplo de cómo utilizar Async/Await en javascript.</p>
+    <pre>
+        <code>
+            async function sumar(a, b) {
+                return a + b;
+            }
+
+            async function mostrarResultado() {
+                try {
+                    var resultado = await sumar(5, 3);
+                    console.log(resultado);
+                } catch (error) {
+                    console.log(error);
+                }
+            }
+
+            mostrarResultado();
+        </code>
+    </pre>
+    <h3>Fetch</h3>
+    <p>Fetch es una API de javascript que permite realizar peticiones HTTP de forma asíncrona. A continuación se muestra un ejemplo de cómo utilizar Fetch en javascript.</p>
+    <pre>
+        <code>
+            fetch("https://jsonplaceholder.typicode.com/posts")
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    console.log(data);
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });
+        </code>
+    </pre>
+    <h3>Local Storage</h3>
+    <p>Local Storage es una API de javascript que permite almacenar datos en el navegador de forma persistente. A continuación se muestra un ejemplo de cómo utilizar Local Storage en javascript.</p>
+    <pre>
+        <code>
+            localStorage.setItem("nombre", "Juan");
+            var nombre = localStorage.getItem("nombre");
+            console.log(nombre);
+        </code>
+    </pre>
+    <h3>Session Storage</h3>
+    <p>Session Storage es una API de javascript que permite almacenar datos en el navegador de forma temporal. A continuación se muestra un ejemplo de cómo utilizar Session Storage en javascript.</p>
+    <pre>
+        <code>
+            sessionStorage.setItem("nombre", "Juan");
+            var nombre = sessionStorage.getItem("nombre");
+            console.log(nombre);
+        </code>
+    </pre>
+    <h3>IndexedDB</h3>
+    <p>IndexedDB es una API de javascript que permite almacenar datos en el navegador de forma estructurada. A continuación se muestra un ejemplo de cómo utilizar IndexedDB en javascript.</p>
+    <pre>
+        <code>
+            var request = indexedDB.open("mi-base-de-datos", 1);
+
+            request.onupgradeneeded = function(event) {
+                var db = event.target.result;
+                var objectStore = db.createObjectStore("personas", { keyPath: "id" });
+                objectStore.createIndex("nombre", "nombre", { unique: false });
+                objectStore.createIndex("edad", "edad", { unique: false });
+            };
+
+            request.onsuccess = function(event) {
+                var db = event.target.result;
+                var transaction = db.transaction("personas", "readwrite");
+                var objectStore = transaction.objectStore("personas");
+                var request = objectStore.add({ id: 1, nombre: "Juan", edad: 25 });
+
+                request.onsuccess = function(event) {
+                    console.log("Persona agregada correctamente");
+                };
+
+                request.onerror = function(event) {
+                    console.log("Error al agregar la persona");
+                };
+            };
+
+            request.onerror = function(event) {
+                console.log("Error al abrir la base de datos");
+            };
+        </code>
+    </pre>
+    <h3>Web Storage</h3>
+    <p>Web Storage es una API de javascript que permite almacenar datos en el navegador de forma persistente o temporal. A continuación se muestra un ejemplo de cómo utilizar Web Storage en javascript.</p>
+    <pre>
+        <code>
+            localStorage.setItem("nombre", "Juan");
+            var nombre = localStorage.getItem("nombre");
+            console.log(nombre);
+
+            sessionStorage.setItem("nombre", "Pedro");
+            var nombre = sessionStorage.getItem("nombre");
+            console.log(nombre);
+        </code>
+    </pre>
+    <h3>Web SQL</h3>
+    <p>Web SQL es una API de javascript que permite almacenar datos en el navegador de forma estructurada. A continuación se muestra un ejemplo de cómo utilizar Web SQL en javascript.</p>
+    <pre>
+        <code>
+            var db = openDatabase("mi-base-de-datos", "1.0", "Mi base de datos", 2 * 1024 * 1024);
+
+            db.transaction(function(tx) {
+                tx.executeSql("CREATE TABLE IF NOT EXISTS personas (id unique, nombre, edad)");
+                tx.executeSql("INSERT INTO personas (id, nombre, edad) VALUES (1, 'Juan', 25)");
+            });
+
+            db.transaction(function(tx) {
+                tx.executeSql("SELECT * FROM personas", [], function(tx, results) {
+                    var len = results.rows.length;
+                    for (var i = 0; i < len; i++) {
+                        var row = results.rows.item(i);
+                        console.log(row.id + " " + row.nombre + " " + row.edad);
+                    }
+                });
+            });
+        </code>
+    </pre>
+    <h3>Web Workers</h3>
+    <p>Web Workers es una API de javascript que permite ejecutar scripts en segundo plano. A continuación se muestra un ejemplo de cómo utilizar Web Workers en javascript.</p>
+    <pre>
+        <code>
+            var worker = new Worker("worker.js");
+
+            worker.onmessage = function(event) {
+                console.log(event.data);
+            };
+
+            worker.postMessage("Hola mundo");
+        </code>
+    </pre>
+    <h3>Service Workers</h3>
+    <p>Service Workers es una API de javascript que permite ejecutar scripts en segundo plano y manejar eventos de red. A continuación se muestra un ejemplo de cómo utilizar Service Workers en javascript.</p>
+    <pre>
+        <code>
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("service-worker.js")
+                    .then(function(registration) {
+                        console.log("Service Worker registrado correctamente");
+                    })
+                    .catch(function(error) {
+                        console.log("Error al registrar el Service Worker");
+                    });
+            }
+        </code>
+    </pre>
+    <h3>IndexedDB</h3>
+    <p>IndexedDB es una API de javascript que permite almacenar datos en el navegador de forma estructurada. A continuación se muestra un ejemplo de cómo utilizar IndexedDB en javascript.</p>
+    <pre>
+        <code>
+            var request = indexedDB.open("mi-base-de-datos", 1);
+
+            request.onupgradeneeded = function(event) {
+                var db = event.target.result;
+                var objectStore = db.createObjectStore("personas", { keyPath: "id" });
+                objectStore.createIndex("nombre", "nombre", { unique: false });
+                objectStore.createIndex("edad", "edad", { unique: false });
+            };
+
+            request.onsuccess = function(event) {
+                var db = event.target.result;
+                var transaction = db.transaction("personas", "readwrite");
+                var objectStore = transaction.objectStore("personas");
+                var request = objectStore.add({ id: 1, nombre: "Juan", edad: 25 });
+
+                request.onsuccess = function(event) {
+                    console.log("Persona agregada correctamente");
+                };
+
+                request.onerror = function(event) {
+                    console.log("Error al agregar la persona");
+                };
+            };
+
+            request.onerror = function(event) {
+                console.log("Error al abrir la base de datos");
+            };
+        </code>
+    </pre>
+    <h3>Métodos window</h3>
+    <p>El objeto window es el objeto global en un navegador y puede ser accedido desde cualquier parte del código. A continuación se muestra una lista de los métodos del objeto window en javascript.</p>
+    <ul>
+        <li>alert: Muestra una alerta en el navegador</li>
+        <li>confirm: Muestra un cuadro de diálogo con un mensaje y botones de aceptar y cancelar</li>
+        <li>prompt: Muestra un cuadro de diálogo con un mensaje y un campo de texto</li>
+        <li>open: Abre una nueva ventana del navegador</li>
+        <li>close: Cierra la ventana actual del navegador</li>
+        <li>setTimeout: Ejecuta una función después de un cierto tiempo</li>
+        <li>setInterval: Ejecuta una función cada cierto tiempo</li>
+        <li>clearTimeout: Detiene la ejecución de una función que se ha programado con setTimeout</li>
+        <li>clearInterval: Detiene la ejecución de una función que se ha programado con setInterval</li>
+        <li>scrollTo: Desplaza la ventana a una posición específica</li>
+        <li>scrollBy: Desplaza la ventana una cierta cantidad de píxeles</li>
+        <li>scroll: Desplaza la ventana a una posición específica</li>
+        <li>resizeTo: Cambia el tamaño de la ventana</li>
+        <li>resizeBy: Cambia el tamaño de la ventana una cierta cantidad de píxeles</li>
+        <li>moveTo: Mueve la ventana a una posición específica</li>
+        <li>moveBy: Mueve la ventana una cierta cantidad de píxeles</li>
+        <li>focus: Pone el foco en la ventana</li>
+        <li>blur: Quita el foco de la ventana</li>
+        <li>print: Imprime la ventana actual</li>
+        <li>postMessage: Envía un mensaje a otra ventana</li>
+        <li>addEventListener: Agrega un evento a un elemento</li>
+        <li>removeEventListener: Elimina un evento de un elemento</li>
+        <li>dispatchEvent: Despacha un evento en un elemento</li>
+    </ul>
+    <h3>Métodos document</h3>
+    <p>El objeto document es el objeto que representa el documento HTML y puede ser accedido desde cualquier parte del código. A continuación se muestra una lista de los métodos del objeto document en javascript.</p>
+    <ul>
+        <li>getElementById: Obtiene un elemento por su id</li>
+        <li>getElementsByClassName: Obtiene elementos por su clase</li>
+        <li>getElementsByTagName: Obtiene elementos por su etiqueta</li>
+        <li>querySelector: Obtiene el primer elemento que cumple con un selector</li>
+        <li>querySelectorAll: Obtiene todos los elementos que cumplen con un selector</li>
+        <li>createElement: Crea un elemento</li>
+        <li>createTextNode: Crea un nodo de texto</li>
+        <li>appendChild: Agrega un nodo al final de un elemento</li>
+        <li>removeChild: Elimina un nodo de un elemento</li>
+        <li>replaceChild: Reemplaza un nodo de un elemento</li>
+        <li>insertBefore: Inserta un nodo antes de otro nodo</li>
+        <li>addEventListener: Agrega un evento a un elemento</li>
+        <li>removeEventListener: Elimina un evento de un elemento</li>
+        <li>dispatchEvent: Despacha un evento en un elemento</li>
+    </ul>
+    <h3>Métodos console</h3>
+    <p>El objeto console es el objeto que representa la consola del navegador y puede ser accedido desde cualquier parte del código. A continuación se muestra una lista de los métodos del objeto console en javascript.</p>
+    <ul>
+        <li>log: Muestra un mensaje en la consola</li>
+        <li>info: Muestra un mensaje informativo en la consola</li>
+        <li>warn: Muestra un mensaje de advertencia en la consola</li>
+        <li>error: Muestra un mensaje de error en la consola</li>
+        <li>table: Muestra una tabla en la consola</li>
+        <li>clear: Limpia la consola</li>
+        <li>time: Inicia un temporizador en la consola</li>
+        <li>timeEnd: Detiene un temporizador en la consola</li>
+        <li>count: Cuenta el número de veces que se ha llamado a un método en la consola</li>
+        <li>group: Agrupa mensajes en la consola</li>
+        <li>groupCollapsed: Agrupa mensajes en la consola colapsados</li>
+        <li>groupEnd: Finaliza un grupo de mensajes en la consola</li>
+        <li>dir: Muestra una lista de propiedades de un objeto en la consola</li>
+        <li>dirxml: Muestra un objeto XML en la consola</li>
+        <li>assert: Muestra un mensaje de error en la consola si una condición es falsa</li>
+        <li>profile: Inicia un perfil de rendimiento en la consola</li>
+        <li>profileEnd: Detiene un perfil de rendimiento en la consola</li>
+        <li>trace: Muestra la pila de llamadas en la consola</li>
+        <li>exception: Lanza una excepción en la consola</li>
+        <li>debug: Muestra un mensaje de depuración en la consola</li>
+        <li>timeStamp: Agrega una marca de tiempo en la consola</li>
+        <li>context: Cambia el contexto de la consola</li>
+        <li>memory: Muestra información sobre la memoria en la consola</li>
+    </ul>
+    <h3>Métodos Math</h3>
+    <p>El objeto Math es un objeto estático que permite realizar operaciones matemáticas en javascript. A continuación se muestra una lista de los métodos del objeto Math en javascript.</p>
+    <ul>
+        <li>abs: Retorna el valor absoluto de un número</li>
+        <li>ceil: Redondea un número hacia arriba</li>
+        <li>floor: Redondea un número hacia abajo</li>
+        <li>round: Redondea un número al entero más cercano</li>
+        <li>max: Retorna el número más grande de una lista de números</li>
+        <li>min: Retorna el número más pequeño de una lista de números</li>
+        <li>pow: Retorna la potencia de un número</li>
+        <li>sqrt: Retorna la raíz cuadrada de un número</li>
+        <li>random: Retorna un número aleatorio entre 0 y 1</li>
+        <li>sin: Retorna el seno de un ángulo</li>
+        <li>cos: Retorna el coseno de un ángulo</li>
+        <li>tan: Retorna la tangente de un ángulo</li>
+        <li>asin: Retorna el arco seno de un número</li>
+        <li>acos: Retorna el arco coseno de un número</li>
+        <li>atan: Retorna el arco tangente de un número</li>
+        <li>atan2: Retorna el arco tangente de las coordenadas x e y</li>
+        <li>log: Retorna el logaritmo natural de un número</li>
+        <li>exp: Retorna e elevado a la potencia de un número</li>    
+        <li>sign: Retorna el signo de un número</li>
+        <li>trunc: Elimina la parte decimal de un número</li>
+        <li>hypot: Retorna la raíz cuadrada de la suma de los cuadrados de los argumentos</li>
+        <li>clz32: Retorna el número de ceros iniciales de un número de 32 bits</li>
+        <li>imul: Retorna el resultado de una multiplicación de enteros de 32 bits</li>
+        <li>fround: Retorna el número más cercano de precisión simple de un número</li>
+        <li>cbrt: Retorna la raíz cúbica de un número</li>
+        <li>log10: Retorna el logaritmo en base 10 de un número</li>
+        <li>log2: Retorna el logaritmo en base 2 de un número</li>
+        <li>log1p: Retorna el logaritmo natural de 1 más un número</li>
+        <li>expm1: Retorna e elevado a la potencia de un número menos uno</li>
+        </ul>
+    <h3>Métodos String</h3>
+    <p>El objeto String es un objeto que representa una cadena de texto y puede ser accedido desde cualquier parte del código. A continuación se muestra una lista de los métodos del objeto String en javascript.</p>
+    <ul>
+        <li>charAt: Retorna el carácter en la posición especificada</li>
+        <li>charCodeAt: Retorna el valor Unicode del carácter en la posición especificada</li>
+        <li>concat: Combina dos o más cadenas de texto</li>
+        <li>indexOf: Retorna la posición de la primera ocurrencia de un valor especificado</li>
+        <li>lastIndexOf: Retorna la posición de la última ocurrencia de un valor especificado</li>
+        <li>localeCompare: Compara dos cadenas de texto en la configuración regional actual</li>
+        <li>match: Busca una cadena de texto en una expresión regular</li>
+        <li>replace: Reemplaza una cadena de texto con otra cadena de texto</li>
+        <li>search: Busca una cadena de texto en una expresión regular y retorna la posición</li>
+        <li>slice: Extrae una parte de una cadena de texto y retorna una nueva cadena de texto</li>
+        <li>split: Divide una cadena de texto en un array de subcadenas</li>
+        <li>substr: Extrae una cantidad de caracteres desde una posición especificada</li>
+        <li>substring: Extrae los caracteres entre dos posiciones especificadas</li>
+        <li>toLowerCase: Convierte una cadena de texto a minúsculas</li>
+        <li>toUpperCase: Convierte una cadena de texto a mayúsculas</li>
+        <li>trim: Elimina los espacios en blanco al principio y al final de una cadena de texto</li>
+        <li>valueOf: Retorna el valor primitivo de un objeto String</li>
+        <li>startsWith: Determina si una cadena de texto comienza con los caracteres de otra cadena de texto</li>
+        <li>endsWith: Determina si una cadena de texto termina con los caracteres de otra cadena de texto</li>
+        <li>includes: Determina si una cadena de texto puede ser encontrada dentro de otra cadena de texto</li>
+        <li>repeat: Retorna una nueva cadena de texto que contiene el número especificado de copias de la cadena de texto original</li>
+        <li>padStart: Rellena la cadena de texto con un número específico
+        de caracteres al principio</li>
+        <li>padEnd: Rellena la cadena de texto con un número específico
+        de caracteres al final</li>
+        <li>trimStart: Elimina los espacios en blanco al principio de una cadena de texto</li>
+        <li>trimEnd: Elimina los espacios en blanco al final de una cadena de texto</li>
+        <li>normalize: Retorna la forma normalizada de una cadena de texto</li>
+        <li>codePointAt: Retorna el valor Unicode del carácter en la posición especificada</li>
+        </ul>
+        
+        
+
+        
+
+    </div>
+    
+    <!-- <script type="text/javascript" src="assets/js/app.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/js/alerts.js"></script> -->
+   <!--  <script type="text/javascript" src="assets/js/primitivos.js"></script> -->
+   <!--  <script type="text/javascript" src="assets/js/palabras-reservadas.js"></script> -->
+    <script type="text/javascript" src="assets/js/arreglos.js"></script>
+</body>
+</html>
